@@ -1,0 +1,38 @@
+body {
+	margin: auto;
+	font-size: 14pt;
+	font-family: Times New Roman, LiHei Pro, 微軟正黑體;
+	background: SeaGreen;
+}
+
+#gacya_box {
+	margin: 25px auto;
+	padding: 25px;
+	width: 600px;
+	background: lightgray;
+	border-radius: 5px;
+}
+
+#gacya_box #message {
+	margin: 15px 15px 30px 15px;
+	text-align: center;
+}
+
+#gacya_box .button {
+	margin: auto;
+	width: 200px;
+	height: 75px;
+	background: GoldenRod;
+	text-align: center;
+	line-height: 75px;
+	border-radius: 15px;
+	box-shadow: gray 2px 2px 5px;
+	
+	cursor: pointer;
+	-webkit-transition: background 0.2s; 
+    transition: background 0.2s;
+}
+
+#gacya_box .button:hover {
+	background: Gold;
+}
