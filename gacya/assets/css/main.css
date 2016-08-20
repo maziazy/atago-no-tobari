@@ -5,7 +5,7 @@ body {
 	background: SeaGreen;
 }
 
-#gacya_box {
+#gacya {
 	margin: 25px auto;
 	padding: 25px;
 	width: 600px;
@@ -13,12 +13,53 @@ body {
 	border-radius: 5px;
 }
 
-#gacya_box #message {
+#gacya .message {
 	margin: 15px 15px 30px 15px;
 	text-align: center;
+	display: none;
 }
 
-#gacya_box .button {
+#gacya .bannerBox {
+	margin: 0 auto 25px auto;
+	width: 97px;
+	height: 280px;
+	position: relative;
+	perspective: 800px;
+}
+
+#gacya #banner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	transform-origin: right center;
+}
+
+#gacya #banner figure {
+	margin: 0;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	backface-visibility: hidden;
+}
+
+#gacya #banner .front {
+	background: url(../images/hime/card_back.png);
+}
+
+#gacya #banner .back {
+	background: blue;
+	transform: rotateY( 180deg );
+}
+
+#gacya #banner.flipped {
+	transform: translateX( -100% ) rotateY( -180deg );
+}
+
+#gacya .button {
 	margin: auto;
 	width: 200px;
 	height: 75px;
@@ -29,10 +70,10 @@ body {
 	box-shadow: gray 2px 2px 5px;
 	
 	cursor: pointer;
-	-webkit-transition: background 0.2s; 
     transition: background 0.2s;
+	-webkit-user-select: none;
 }
 
-#gacya_box .button:hover {
+#gacya .button:hover {
 	background: Gold;
 }
