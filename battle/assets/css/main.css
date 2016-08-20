@@ -57,6 +57,7 @@ body {
 
 #field .unit .progress.finished {
 	height: 0px;
+	transition-timing-function: linear;
 	transition-property: height;
 }
 
