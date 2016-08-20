@@ -441,6 +441,13 @@ function getHimelist() {
 			"type": "槍",
 			"chance": 0.198,
 			"imagebanner": "01_12_03_01_01"
+		},
+		{
+			"name": "愛宕",
+			"class": "乱入種",
+			"type": "斧",
+			"chance": 0.099,
+			"imagebanner": "atago"
 		}
 	];
 }
