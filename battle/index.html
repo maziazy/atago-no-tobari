@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Maziazy">
+	<title>あたごの帳 戦い編</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css" media="all">
+	<script type="text/javascript" src="./assets/js/lib/mtool.js"></script>
+	<!-- Data -->
+	<script type="text/javascript" src="./assets/js/data/skills.js"></script>
+	<script type="text/javascript" src="./assets/js/data/himes.js"></script>
+	<script type="text/javascript" src="./assets/js/data.js"></script>
+	<!-- Classes -->
+	<script type="text/javascript" src="./assets/js/skill.js"></script>
+	<script type="text/javascript" src="./assets/js/baseunit.js"></script>
+	<script type="text/javascript" src="./assets/js/attributes.js"></script>
+	<script type="text/javascript" src="./assets/js/hime.js"></script>
+	<script type="text/javascript" src="./assets/js/kaibutsu.js"></script>
+	<script type="text/javascript" src="./assets/js/unit.js"></script>
+	<script type="text/javascript" src="./assets/js/player.js"></script>
+	<script type="text/javascript" src="./assets/js/battle.js"></script>
+	<!-- Script -->
+	<script type="text/javascript" src="./assets/js/ui.js"></script>
+	<script type="text/javascript" src="./assets/js/main.js"></script>
+</head>
+<body>
+	<div class="header">
+		
+	</div>
+	<div class="content">
+		<div id="field">
+			<template id="unit_t">
+				<div class="unit">
+					<progress class="hp" value="80" max="100"></progress>
+					<progress class="mp" value="60" max="100"></progress>
+					<div class="progress"></div>
+				</div>
+			</template>
+			<div id="enemyUnits"></div>
+			<div id="playerUnits"></div>
+		</div>
+		<div class="message"></div>
+		<div class="button" id="goldGacya" onclick="battle.begin()">Begin</div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
