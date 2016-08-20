@@ -11,7 +11,7 @@ function Unit(base, owner) {
 	this.fainted = false;
 	this.hp = this.base.hp;
 	this.mp = this.base.mp;
-	this.cd = 2000;
+	this.cd = (2000 - (this.base.agi*20))*1.5;
 	this.nextMove = {
 		"skill": 0,
 		"target": 0
@@ -30,7 +30,7 @@ Unit.prototype.resetProgressUI = function() {
 	this.ui.$('.progress').classList.remove("finished");
 	// reset animation
 	void this.ui.$('.progress').offsetWidth;
-	this.ui.$('.progress').style.transitionDuration = '2s';
+	this.ui.$('.progress').style.transitionDuration = (this.cd/1000)+'s';
 	this.ui.$('.progress').classList.add("finished");
 }
 
