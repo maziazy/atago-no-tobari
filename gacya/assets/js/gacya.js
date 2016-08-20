@@ -1,6 +1,7 @@
-function Hime(name, chance) {
+function Hime(name, chance, banner) {
 	this.name = name;
 	this.gacyaChance = chance;
+	this.banner = banner;
 }
 
 var gacya = {
@@ -11,7 +12,7 @@ var gacya = {
 		this.himes = [];
 		for(var key in rawhimes) {
 			var rawhime = rawhimes[key];
-			var newhime = new Hime(rawhime.name, rawhime.chance);
+			var newhime = new Hime(rawhime.name, rawhime.chance, rawhime.imagebanner);
 			this.himes.push(newhime);
 		}
 		
